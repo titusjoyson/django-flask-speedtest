@@ -9,10 +9,14 @@ from random import randint
 class Command(BaseCommand):
     help = 'insert 1000000 records in to database'
 
+    def add_arguments(self, parser):
+        parser.add_argument('rounds', type=int, help='Indicates the number of users rows to insert in db')
+
     def handle(self, *args, **options):
+        rounds = options.get('rounds', 10000)
         users = []
         self.stdout.write("generating user object")
-        for id_n in range(1, 1000001):
+        for id_n in range(1, rounds + 1):
             username = uuid.uuid4()
             user = User(
                 username=username,
