@@ -1,0 +1,6 @@
+http://127.0.0.1:8000/django/speedtest/simple/
+http://127.0.0.1:8000/django/speedtest/algo/
+http://127.0.0.1:8000/django/speedtest/count/
+http://127.0.0.1:8000/django/speedtest/select/
+http://127.0.0.1:8000/django/speedtest/paginated/?page=3
+http://127.0.0.1:8000/django/speedtest/aggregation/

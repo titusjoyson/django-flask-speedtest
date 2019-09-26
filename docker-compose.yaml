@@ -1,0 +1,44 @@
+version: '3'
+
+services:
+
+  db:
+    image: postgres:11.5
+    environment:
+      POSTGRES_USER: speedtest
+      POSTGRES_DB: speedtest
+      POSTGRES_PASSWORD: speedtest
+    volumes:
+      - ./postgres-data:/var/lib/postgresql/data
+
+  django:
+    build: . 
+    volumes:
+      - .:/code
+    command: bash -c "cd djangospeed && python manage.py migrate && gunicorn -w 4 -b 0.0.0.0:8090 djangospeed.wsgi"
+    expose:
+      - "8090"
+    depends_on:
+      - db
+  
+  flask:
+    build: .
+    volumes:
+      - .:/code
+    command: bash -c "cd flaskspeed && gunicorn -w 4 -b 0.0.0.0:8080 app:app"
+    expose:
+      - "8080"
+    depends_on:
+      - db
+      - django
+
+  nginx:
+    image: nginx:1.17.4
+    container_name: ng01
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./nginx:/etc/nginx/conf.d
+    depends_on:
+      - django
+      - flask

@@ -1,0 +1,6 @@
+http://127.0.0.1:8000/flask/speedtest/simple
+http://127.0.0.1:8000/flask/speedtest/algo
+http://127.0.0.1:8000/flask/speedtest/count
+http://127.0.0.1:8000/flask/speedtest/select
+http://127.0.0.1:8000/flask/speedtest/paginated?page=3
+http://127.0.0.1:8000/flask/speedtest/aggregation

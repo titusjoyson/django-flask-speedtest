@@ -1,0 +1,6 @@
+http://127.0.0.1:8090/speedtest/simple/
+http://127.0.0.1:8090/speedtest/algo/
+http://127.0.0.1:8090/speedtest/count/
+http://127.0.0.1:8090/speedtest/select/
+http://127.0.0.1:8090/speedtest/paginated/?page=3
+http://127.0.0.1:8090/speedtest/aggregation/

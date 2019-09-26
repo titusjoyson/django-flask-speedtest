@@ -1,0 +1,1 @@
+cat benchmark/urls/flask.txt | parallel "ab -n 1000 -c 10 {}" > benchmark/results/flask_result.txt

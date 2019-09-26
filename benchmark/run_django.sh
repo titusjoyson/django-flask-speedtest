@@ -1,0 +1,1 @@
+cat benchmark/urls/django.txt | parallel "ab -n 1000 -c 10 {}" > benchmark/results/django_result.txt  

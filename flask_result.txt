@@ -1,0 +1,128 @@
+This is ApacheBench, Version 2.3 <$Revision: 1807734 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 127.0.0.1 (be patient)
+
+
+Server Software:        gunicorn/19.9.0
+Server Hostname:        127.0.0.1
+Server Port:            8080
+
+Document Path:          /speedtest/paginated?page=3
+Document Length:        19892 bytes
+
+Concurrency Level:      10
+Time taken for tests:   30.111 seconds
+Complete requests:      461
+Failed requests:        417
+   (Connect: 0, Receive: 0, Length: 417, Exceptions: 0)
+Total transferred:      9231902 bytes
+HTML transferred:       9160447 bytes
+Requests per second:    15.31 [#/sec] (mean)
+Time per request:       653.163 [ms] (mean)
+Time per request:       65.316 [ms] (mean, across all concurrent requests)
+Transfer rate:          299.41 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   0.0      0       0
+Processing:   147  642 106.2    628    1070
+Waiting:      147  642 106.1    628    1070
+Total:        147  642 106.1    628    1070
+
+Percentage of the requests served within a certain time (ms)
+  50%    628
+  66%    649
+  75%    667
+  80%    682
+  90%    739
+  95%    849
+  98%    974
+  99%   1014
+ 100%   1070 (longest request)
+This is ApacheBench, Version 2.3 <$Revision: 1807734 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 127.0.0.1 (be patient)
+
+
+Server Software:        gunicorn/19.9.0
+Server Hostname:        127.0.0.1
+Server Port:            8080
+
+Document Path:          /speedtest/simple
+Document Length:        1911 bytes
+
+Concurrency Level:      10
+Time taken for tests:   30.120 seconds
+Complete requests:      601
+Failed requests:        0
+Total transferred:      1241065 bytes
+HTML transferred:       1148511 bytes
+Requests per second:    19.95 [#/sec] (mean)
+Time per request:       501.165 [ms] (mean)
+Time per request:       50.116 [ms] (mean, across all concurrent requests)
+Transfer rate:          40.24 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   0.1      0       1
+Processing:     1  491 153.0    509     954
+Waiting:        1  491 153.0    509     954
+Total:          2  491 153.0    509     954
+
+Percentage of the requests served within a certain time (ms)
+  50%    509
+  66%    528
+  75%    541
+  80%    548
+  90%    577
+  95%    629
+  98%    857
+  99%    925
+ 100%    954 (longest request)
+This is ApacheBench, Version 2.3 <$Revision: 1807734 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 127.0.0.1 (be patient)
+
+
+Server Software:        gunicorn/19.9.0
+Server Hostname:        127.0.0.1
+Server Port:            8080
+
+Document Path:          /speedtest/aggregation
+Document Length:        49 bytes
+
+Concurrency Level:      10
+Time taken for tests:   30.237 seconds
+Complete requests:      497
+Failed requests:        46
+   (Connect: 0, Receive: 0, Length: 46, Exceptions: 0)
+Total transferred:      99851 bytes
+HTML transferred:       24307 bytes
+Requests per second:    16.44 [#/sec] (mean)
+Time per request:       608.391 [ms] (mean)
+Time per request:       60.839 [ms] (mean, across all concurrent requests)
+Transfer rate:          3.22 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   0.0      0       0
+Processing:   402  596  90.3    576    1030
+Waiting:      402  596  90.2    576    1030
+Total:        403  596  90.3    576    1030
+
+Percentage of the requests served within a certain time (ms)
+  50%    576
+  66%    598
+  75%    613
+  80%    632
+  90%    678
+  95%    788
+  98%    928
+  99%   1014
+ 100%   1030 (longest request)
