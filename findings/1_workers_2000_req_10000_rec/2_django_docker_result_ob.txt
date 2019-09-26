@@ -1,0 +1,344 @@
+
+This is ApacheBench, Version 2.3 <$Revision: 1807734 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 127.0.0.1 (be patient)
+
+
+Server Software:        nginx/1.17.4
+Server Hostname:        127.0.0.1
+Server Port:            8000
+
+Document Path:          /django/speedtest/simple/
+Document Length:        1910 bytes
+
+Concurrency Level:      10
+Time taken for tests:   3.159 seconds
+Complete requests:      2000
+Failed requests:        0
+Total transferred:      4278000 bytes
+HTML transferred:       3820000 bytes
+Requests per second:    633.11 [#/sec] (mean)
+Time per request:       15.795 [ms] (mean)
+Time per request:       1.580 [ms] (mean, across all concurrent requests)
+Transfer rate:          1322.47 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   0.0      0       1
+Processing:     4   16   3.4     14      31
+Waiting:        4   16   3.4     14      31
+Total:          4   16   3.4     14      31
+
+Percentage of the requests served within a certain time (ms)
+  50%     14
+  66%     16
+  75%     17
+  80%     18
+  90%     21
+  95%     23
+  98%     25
+  99%     28
+ 100%     31 (longest request)
+This is ApacheBench, Version 2.3 <$Revision: 1807734 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 127.0.0.1 (be patient)
+
+
+Server Software:        nginx/1.17.4
+Server Hostname:        127.0.0.1
+Server Port:            8000
+
+Document Path:          /django/speedtest/algo/
+Document Length:        17 bytes
+
+Concurrency Level:      10
+Time taken for tests:   93.961 seconds
+Complete requests:      2000
+Failed requests:        0
+Total transferred:      488000 bytes
+HTML transferred:       34000 bytes
+Requests per second:    21.29 [#/sec] (mean)
+Time per request:       469.803 [ms] (mean)
+Time per request:       46.980 [ms] (mean, across all concurrent requests)
+Transfer rate:          5.07 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   0.0      0       0
+Processing:    59  469  61.0    452     873
+Waiting:       59  469  61.0    452     873
+Total:         60  469  61.0    452     873
+
+Percentage of the requests served within a certain time (ms)
+  50%    452
+  66%    460
+  75%    467
+  80%    471
+  90%    522
+  95%    583
+  98%    722
+  99%    763
+ 100%    873 (longest request)
+This is ApacheBench, Version 2.3 <$Revision: 1807734 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 127.0.0.1 (be patient)
+
+
+Server Software:        nginx/1.17.4
+Server Hostname:        127.0.0.1
+Server Port:            8000
+
+Document Path:          /django/speedtest/count/
+Document Length:        11 bytes
+
+Concurrency Level:      10
+Time taken for tests:   15.162 seconds
+Complete requests:      2000
+Failed requests:        0
+Total transferred:      476000 bytes
+HTML transferred:       22000 bytes
+Requests per second:    131.91 [#/sec] (mean)
+Time per request:       75.811 [ms] (mean)
+Time per request:       7.581 [ms] (mean, across all concurrent requests)
+Transfer rate:          30.66 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   0.0      0       1
+Processing:     6   75  15.6     68     132
+Waiting:        6   75  15.5     67     131
+Total:          6   76  15.6     68     132
+
+Percentage of the requests served within a certain time (ms)
+  50%     68
+  66%     73
+  75%     85
+  80%     88
+  90%     97
+  95%    109
+  98%    121
+  99%    124
+ 100%    132 (longest request)
+This is ApacheBench, Version 2.3 <$Revision: 1807734 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 127.0.0.1 (be patient)
+
+
+Server Software:        nginx/1.17.4
+Server Hostname:        127.0.0.1
+Server Port:            8000
+
+Document Path:          /django/speedtest/select/
+Document Length:        2 bytes
+
+Concurrency Level:      10
+Time taken for tests:   13.668 seconds
+Complete requests:      2000
+Failed requests:        0
+Total transferred:      456000 bytes
+HTML transferred:       4000 bytes
+Requests per second:    146.33 [#/sec] (mean)
+Time per request:       68.339 [ms] (mean)
+Time per request:       6.834 [ms] (mean, across all concurrent requests)
+Transfer rate:          32.58 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   0.0      0       1
+Processing:     8   68   5.0     67      96
+Waiting:        8   68   5.0     67      96
+Total:          8   68   5.0     67      96
+
+Percentage of the requests served within a certain time (ms)
+  50%     67
+  66%     68
+  75%     69
+  80%     70
+  90%     73
+  95%     76
+  98%     82
+  99%     88
+ 100%     96 (longest request)
+This is ApacheBench, Version 2.3 <$Revision: 1807734 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 127.0.0.1 (be patient)
+
+
+Server Software:        nginx/1.17.4
+Server Hostname:        127.0.0.1
+Server Port:            8000
+
+Document Path:          /django/speedtest/paginated/?page=3
+Document Length:        2 bytes
+
+Concurrency Level:      10
+Time taken for tests:   14.741 seconds
+Complete requests:      2000
+Failed requests:        0
+Total transferred:      456000 bytes
+HTML transferred:       4000 bytes
+Requests per second:    135.68 [#/sec] (mean)
+Time per request:       73.703 [ms] (mean)
+Time per request:       7.370 [ms] (mean, across all concurrent requests)
+Transfer rate:          30.21 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   0.1      0       3
+Processing:     8   73   4.2     72      98
+Waiting:        8   73   4.2     72      98
+Total:          9   73   4.2     72      98
+
+Percentage of the requests served within a certain time (ms)
+  50%     72
+  66%     74
+  75%     75
+  80%     75
+  90%     78
+  95%     80
+  98%     83
+  99%     89
+ 100%     98 (longest request)
+This is ApacheBench, Version 2.3 <$Revision: 1807734 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 127.0.0.1 (be patient)
+
+
+Server Software:        nginx/1.17.4
+Server Hostname:        127.0.0.1
+Server Port:            8000
+
+Document Path:          /django/speedtest/aggregation/
+Document Length:        46 bytes
+
+Concurrency Level:      10
+Time taken for tests:   13.668 seconds
+Complete requests:      2000
+Failed requests:        1828
+   (Connect: 0, Receive: 0, Length: 1828, Exceptions: 0)
+Total transferred:      547828 bytes
+HTML transferred:       93828 bytes
+Requests per second:    146.33 [#/sec] (mean)
+Time per request:       68.340 [ms] (mean)
+Time per request:       6.834 [ms] (mean, across all concurrent requests)
+Transfer rate:          39.14 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   0.0      0       1
+Processing:     8   68   5.1     67     116
+Waiting:        8   68   5.1     67     116
+Total:          8   68   5.1     67     116
+
+Percentage of the requests served within a certain time (ms)
+  50%     67
+  66%     68
+  75%     69
+  80%     70
+  90%     73
+  95%     75
+  98%     79
+  99%     81
+ 100%    116 (longest request)
+This is ApacheBench, Version 2.3 <$Revision: 1807734 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 127.0.0.1 (be patient)
+
+
+Server Software:        nginx/1.17.4
+Server Hostname:        127.0.0.1
+Server Port:            8000
+
+Document Path:          /django/speedtest/create/
+Document Length:        16 bytes
+
+Concurrency Level:      10
+Time taken for tests:   76.999 seconds
+Complete requests:      2000
+Failed requests:        0
+Total transferred:      476000 bytes
+Total body sent:        382000
+HTML transferred:       32000 bytes
+Requests per second:    25.97 [#/sec] (mean)
+Time per request:       384.994 [ms] (mean)
+Time per request:       38.499 [ms] (mean, across all concurrent requests)
+Transfer rate:          6.04 [Kbytes/sec] received
+                        4.84 kb/s sent
+                        10.88 kb/s total
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   0.1      0       2
+Processing:   111  384 208.7    341    2893
+Waiting:      111  384 208.7    341    2893
+Total:        111  384 208.7    341    2893
+
+Percentage of the requests served within a certain time (ms)
+  50%    341
+  66%    363
+  75%    384
+  80%    392
+  90%    429
+  95%    517
+  98%    906
+  99%   1473
+ 100%   2893 (longest request)
+This is ApacheBench, Version 2.3 <$Revision: 1807734 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 127.0.0.1 (be patient)
+
+
+Server Software:        nginx/1.17.4
+Server Hostname:        127.0.0.1
+Server Port:            8000
+
+Document Path:          /django/speedtest/update/
+Document Length:        16 bytes
+
+Concurrency Level:      10
+Time taken for tests:   105.385 seconds
+Complete requests:      2000
+Failed requests:        0
+Total transferred:      474000 bytes
+Total body sent:        386000
+HTML transferred:       32000 bytes
+Requests per second:    18.98 [#/sec] (mean)
+Time per request:       526.924 [ms] (mean)
+Time per request:       52.692 [ms] (mean, across all concurrent requests)
+Transfer rate:          4.39 [Kbytes/sec] received
+                        3.58 kb/s sent
+                        7.97 kb/s total
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   0.1      0       2
+Processing:    57  526 239.4    471    2326
+Waiting:       57  525 239.4    471    2326
+Total:         58  526 239.4    472    2326
+
+Percentage of the requests served within a certain time (ms)
+  50%    472
+  66%    473
+  75%    494
+  80%    506
+  90%    626
+  95%    957
+  98%   1519
+  99%   1656
+ 100%   2326 (longest request)

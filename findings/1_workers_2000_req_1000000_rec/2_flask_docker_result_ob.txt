@@ -1,0 +1,344 @@
+
+This is ApacheBench, Version 2.3 <$Revision: 1807734 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 127.0.0.1 (be patient)
+
+
+Server Software:        nginx/1.17.4
+Server Hostname:        127.0.0.1
+Server Port:            8000
+
+Document Path:          /flask/speedtest/simple
+Document Length:        1911 bytes
+
+Concurrency Level:      10
+Time taken for tests:   2.265 seconds
+Complete requests:      2000
+Failed requests:        0
+Total transferred:      4124000 bytes
+HTML transferred:       3822000 bytes
+Requests per second:    882.93 [#/sec] (mean)
+Time per request:       11.326 [ms] (mean)
+Time per request:       1.133 [ms] (mean, across all concurrent requests)
+Transfer rate:          1777.93 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   0.1      0       1
+Processing:     5   11   4.2     11      30
+Waiting:        4   11   4.2     11      30
+Total:          6   11   4.3     11      30
+
+Percentage of the requests served within a certain time (ms)
+  50%     11
+  66%     13
+  75%     14
+  80%     14
+  90%     16
+  95%     20
+  98%     23
+  99%     25
+ 100%     30 (longest request)
+This is ApacheBench, Version 2.3 <$Revision: 1807734 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 127.0.0.1 (be patient)
+
+
+Server Software:        nginx/1.17.4
+Server Hostname:        127.0.0.1
+Server Port:            8000
+
+Document Path:          /flask/speedtest/algo
+Document Length:        18 bytes
+
+Concurrency Level:      10
+Time taken for tests:   96.753 seconds
+Complete requests:      2000
+Failed requests:        0
+Total transferred:      334000 bytes
+HTML transferred:       36000 bytes
+Requests per second:    20.67 [#/sec] (mean)
+Time per request:       483.767 [ms] (mean)
+Time per request:       48.377 [ms] (mean, across all concurrent requests)
+Transfer rate:          3.37 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   0.0      0       0
+Processing:    52  483  81.6    445     791
+Waiting:       52  483  81.6    445     790
+Total:         53  483  81.6    446     791
+
+Percentage of the requests served within a certain time (ms)
+  50%    446
+  66%    460
+  75%    494
+  80%    520
+  90%    608
+  95%    689
+  98%    737
+  99%    751
+ 100%    791 (longest request)
+This is ApacheBench, Version 2.3 <$Revision: 1807734 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 127.0.0.1 (be patient)
+
+
+Server Software:        nginx/1.17.4
+Server Hostname:        127.0.0.1
+Server Port:            8000
+
+Document Path:          /flask/speedtest/count
+Document Length:        17 bytes
+
+Concurrency Level:      10
+Time taken for tests:   72.172 seconds
+Complete requests:      2000
+Failed requests:        0
+Total transferred:      332000 bytes
+HTML transferred:       34000 bytes
+Requests per second:    27.71 [#/sec] (mean)
+Time per request:       360.862 [ms] (mean)
+Time per request:       36.086 [ms] (mean, across all concurrent requests)
+Transfer rate:          4.49 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   0.0      0       0
+Processing:    36  360  69.6    331     612
+Waiting:       36  360  69.5    331     612
+Total:         37  360  69.6    331     612
+
+Percentage of the requests served within a certain time (ms)
+  50%    331
+  66%    356
+  75%    381
+  80%    397
+  90%    466
+  95%    538
+  98%    569
+  99%    586
+ 100%    612 (longest request)
+This is ApacheBench, Version 2.3 <$Revision: 1807734 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 127.0.0.1 (be patient)
+
+
+Server Software:        nginx/1.17.4
+Server Hostname:        127.0.0.1
+Server Port:            8000
+
+Document Path:          /flask/speedtest/select
+Document Length:        19895 bytes
+
+Concurrency Level:      10
+Time taken for tests:   155.083 seconds
+Complete requests:      2000
+Failed requests:        0
+Total transferred:      40094000 bytes
+HTML transferred:       39790000 bytes
+Requests per second:    12.90 [#/sec] (mean)
+Time per request:       775.413 [ms] (mean)
+Time per request:       77.541 [ms] (mean, across all concurrent requests)
+Transfer rate:          252.47 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   0.0      0       0
+Processing:   159  774 168.4    710    1805
+Waiting:      159  774 168.4    710    1805
+Total:        159  774 168.4    710    1805
+
+Percentage of the requests served within a certain time (ms)
+  50%    710
+  66%    729
+  75%    753
+  80%    775
+  90%    944
+  95%   1213
+  98%   1390
+  99%   1449
+ 100%   1805 (longest request)
+This is ApacheBench, Version 2.3 <$Revision: 1807734 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 127.0.0.1 (be patient)
+
+
+Server Software:        nginx/1.17.4
+Server Hostname:        127.0.0.1
+Server Port:            8000
+
+Document Path:          /flask/speedtest/paginated?page=3
+Document Length:        19895 bytes
+
+Concurrency Level:      10
+Time taken for tests:   202.707 seconds
+Complete requests:      2000
+Failed requests:        0
+Total transferred:      40094000 bytes
+HTML transferred:       39790000 bytes
+Requests per second:    9.87 [#/sec] (mean)
+Time per request:       1013.533 [ms] (mean)
+Time per request:       101.353 [ms] (mean, across all concurrent requests)
+Transfer rate:          193.16 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   0.0      0       0
+Processing:   187 1011  43.7   1010    1514
+Waiting:      187 1011  43.7   1010    1514
+Total:        188 1011  43.7   1010    1515
+
+Percentage of the requests served within a certain time (ms)
+  50%   1010
+  66%   1015
+  75%   1021
+  80%   1026
+  90%   1035
+  95%   1041
+  98%   1047
+  99%   1082
+ 100%   1515 (longest request)
+This is ApacheBench, Version 2.3 <$Revision: 1807734 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 127.0.0.1 (be patient)
+
+
+Server Software:        nginx/1.17.4
+Server Hostname:        127.0.0.1
+Server Port:            8000
+
+Document Path:          /flask/speedtest/aggregation
+Document Length:        51 bytes
+
+Concurrency Level:      10
+Time taken for tests:   91.610 seconds
+Complete requests:      2000
+Failed requests:        1797
+   (Connect: 0, Receive: 0, Length: 1797, Exceptions: 0)
+Total transferred:      401797 bytes
+HTML transferred:       103797 bytes
+Requests per second:    21.83 [#/sec] (mean)
+Time per request:       458.048 [ms] (mean)
+Time per request:       45.805 [ms] (mean, across all concurrent requests)
+Transfer rate:          4.28 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   0.0      0       0
+Processing:    68  457  31.1    451     770
+Waiting:       68  457  31.1    451     770
+Total:         68  457  31.1    451     770
+
+Percentage of the requests served within a certain time (ms)
+  50%    451
+  66%    453
+  75%    455
+  80%    458
+  90%    471
+  95%    498
+  98%    516
+  99%    553
+ 100%    770 (longest request)
+This is ApacheBench, Version 2.3 <$Revision: 1807734 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 127.0.0.1 (be patient)
+
+
+Server Software:        nginx/1.17.4
+Server Hostname:        127.0.0.1
+Server Port:            8000
+
+Document Path:          /flask/speedtest/create
+Document Length:        17 bytes
+
+Concurrency Level:      10
+Time taken for tests:   223.509 seconds
+Complete requests:      2000
+Failed requests:        0
+Total transferred:      332000 bytes
+Total body sent:        378000
+HTML transferred:       34000 bytes
+Requests per second:    8.95 [#/sec] (mean)
+Time per request:       1117.544 [ms] (mean)
+Time per request:       111.754 [ms] (mean, across all concurrent requests)
+Transfer rate:          1.45 [Kbytes/sec] received
+                        1.65 kb/s sent
+                        3.10 kb/s total
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   0.1      0       2
+Processing:   130 1112 828.9    827    4248
+Waiting:      130 1112 828.9    827    4248
+Total:        130 1112 828.9    827    4248
+
+Percentage of the requests served within a certain time (ms)
+  50%    827
+  66%   1427
+  75%   1668
+  80%   1792
+  90%   2228
+  95%   2768
+  98%   3240
+  99%   3644
+ 100%   4248 (longest request)
+This is ApacheBench, Version 2.3 <$Revision: 1807734 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 127.0.0.1 (be patient)
+
+
+Server Software:        nginx/1.17.4
+Server Hostname:        127.0.0.1
+Server Port:            8000
+
+Document Path:          /flask/speedtest/update
+Document Length:        17 bytes
+
+Concurrency Level:      10
+Time taken for tests:   7.330 seconds
+Complete requests:      2000
+Failed requests:        0
+Total transferred:      332000 bytes
+Total body sent:        382000
+HTML transferred:       34000 bytes
+Requests per second:    272.86 [#/sec] (mean)
+Time per request:       36.649 [ms] (mean)
+Time per request:       3.665 [ms] (mean, across all concurrent requests)
+Transfer rate:          44.23 [Kbytes/sec] received
+                        50.90 kb/s sent
+                        95.13 kb/s total
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   0.1      0       4
+Processing:     5   36   3.9     35      56
+Waiting:        5   36   3.9     35      56
+Total:          5   37   3.9     35      56
+
+Percentage of the requests served within a certain time (ms)
+  50%     35
+  66%     36
+  75%     37
+  80%     37
+  90%     43
+  95%     46
+  98%     48
+  99%     50
+ 100%     56 (longest request)
