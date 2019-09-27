@@ -4,12 +4,11 @@
 # build and run the containers
 docker-compose up --build -d
 
-# lets load some data
-
-# loginto django container
+# load some data
+# login to django container
 docker-compose exec django bash
-
 django# cd djangospeed
+
 # this will insert 10000 records
 django# python manage.py load_data 10000
 django# exit
