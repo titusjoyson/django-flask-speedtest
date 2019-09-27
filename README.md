@@ -1,4 +1,4 @@
-### Just want to test
+### How to rerun the test ?
 
 ```
 # build and run the containers
@@ -24,6 +24,4 @@ bash benchmark/run_test_docker.sh
 ```
 sudo apt-get install apache2-utils
 ```
-### WIP
-#### install psql in local or docker 
-#### change the domain name for psql in djaggo and flask settings
+todo: WIP
