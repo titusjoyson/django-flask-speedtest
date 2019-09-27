@@ -1,28 +1,29 @@
-docker run --name pg-docker -e POSTGRES_USER=speedtest -e POSTGRES_DB=speedtest -e POSTGRES_PASSWORD=speedtest -d postgres
+### Just want to test
 
-172.18.0.2
+```
+# build and run the containers
+docker-compose up --build -d
 
+# lets load some data
 
-django:
-gunicorn -w 4 -b localhost:8080 djangospeed.wsgi
+# loginto django container
+docker-compose exec django bash
 
-flask:
-gunicorn -w 4 -b localhost:8090 app:app
+django# cd djangospeed
+# this will insert 10000 records
+django# python manage.py load_data 10000
+django# exit
 
+# this will create the results in side 
+# benchmark/results/flask_docker_result_ob.txt
+# benchmark/results/django_docker_result_ob.txt
+bash benchmark/run_test_docker.sh
+```
 
-docker run --rm williamyeh/wrk
-docker run --rm  -v `pwd`:/data williamyeh/wrk -c1 -t1 -d5s -s benchmark/test_script.lua "http://localhost:8090"
-
-
-
-
-
-
-sudo apt-get install parallel
+### Local setup
+```
 sudo apt-get install apache2-utils
-
-
-ab -n 100 -c 10 http://localhost:8080/speedtest/simple
-
-
-https://github.com/tortoise/orm-benchmarks
+```
+### WIP
+#### install psql in local or docker 
+#### change the domain name for psql in djaggo and flask settings
