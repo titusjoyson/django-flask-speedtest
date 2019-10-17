@@ -1,6 +1,6 @@
 # Django Vs Flask
 
-A repo for perfoming speed test, ORM benchmarking and framework comparison with mininal web application setup between Django and Flask. Visit [My article]() for more details.
+A repo for performing speed test, ORM benchmarking and framework comparison with minimal web application setup between Django and Flask. Visit [My article]() for more details.
 
 ## Table of Contents
 
@@ -8,6 +8,7 @@ A repo for perfoming speed test, ORM benchmarking and framework comparison with 
 - [Run Test](#run-test)
 - [Report](#report)
 - [Sample Results](#sample-results)
+- [Reference](#reference)
 - [Support](#support)
 - [Contributing](#contributing)
 
