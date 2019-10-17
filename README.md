@@ -1,13 +1,13 @@
 # Django Vs Flask
 
-A repo for perfoming speed test, ORM benchmarking and framework comparison with mininal web application setup between Django and Flask. Visit (Medium Article)[] for more details.
+A repo for perfoming speed test, ORM benchmarking and framework comparison with mininal web application setup between Django and Flask. Visit [My article]() for more details.
 
 ## Table of Contents
 
 - [Installation](#installation)
-- [Run Test](#runtest)
+- [Run Test](#run-test)
 - [Report](#report)
-- [Sample Results](#sampleresults)
+- [Sample Results](#sample-results)
 - [Support](#support)
 - [Contributing](#contributing)
 
@@ -31,11 +31,11 @@ docker-compose up --build -d
 docker-compose exec django bash
 django# cd djangospeed
 
-# this will insert 10000 records
+# insert 10000 records
 django# python manage.py load_data 10000
 django# exit
 
-# this will create the results in side 
+# Run the bellow command to create the results in
 # benchmark/results/flask_docker_result_ob.txt
 # benchmark/results/django_docker_result_ob.txt
 bash benchmark/run_test_docker.sh
@@ -45,7 +45,7 @@ bash benchmark/run_test_docker.sh
 
 ### Requests/Sec Benchmarking
 
-Check the results (here)[https://github.com/titusjoyson/django-flask-speedtest/tree/master/findings]
+Check the results [here](https://github.com/titusjoyson/django-flask-speedtest/tree/master/findings)
 
 ```
 Server Software:        nginx/1.17.4
@@ -103,7 +103,7 @@ Time taken to complete 1000 queries:
 
 ## Reference
 
-- Abetter Orm Comparison [link](https://github.com/tortoise/orm-benchmarks)
+- A better ORM Comparison [link](https://github.com/tortoise/orm-benchmarks)
 
 ## Support
 
