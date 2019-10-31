@@ -1,5 +1,10 @@
 ### 1000000
 
+ workers: 4
+ total db rec: 10,00,000
+ total req: 2000
+ concurrency: 10 
+
  |                  | Django |  Flask  |
  |------------------|--------|---------|
  | Pre defined data | 870.41 | 1613.45 |

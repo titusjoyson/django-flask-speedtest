@@ -1,5 +1,10 @@
 ### 10000
 
+ workers: 4
+ total db rec: 10,000
+ total req: 2000
+ concurrency: 10 
+
 |                  | Django |  Flask  |
 |------------------|--------|---------|
 | Predefined data  |    952 | 1369.25 |
@@ -11,6 +16,3 @@
 | create           | 228.39 |  527.57 |
 | save             | 208.17 |   504.5 |
 | update           | 257.94 |  837.35 |
-
-
-### 1000000
