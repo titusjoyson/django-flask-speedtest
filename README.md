@@ -57,36 +57,33 @@ Document Path:          /django/speedtest/simple/
 Document Length:        1910 bytes
 
 Concurrency Level:      10
-Time taken for tests:   0.169 seconds
-Complete requests:      100
+Time taken for tests:   2.579 seconds
+Complete requests:      2000
 Failed requests:        0
-Total transferred:      213900 bytes
-HTML transferred:       191000 bytes
-Requests per second:    591.10 [#/sec] (mean)
-Time per request:       16.918 [ms] (mean)
-Time per request:       1.692 [ms] (mean, across all concurrent requests)
-Transfer rate:          1234.72 [Kbytes/sec] received
+Total transferred:      4278000 bytes
+HTML transferred:       3820000 bytes
+Requests per second:    775.60 [#/sec] (mean)
+Time per request:       12.893 [ms] (mean)
+Time per request:       1.289 [ms] (mean, across all concurrent requests)
+Transfer rate:          1620.13 [Kbytes/sec] received
 
 Connection Times (ms)
               min  mean[+/-sd] median   max
-Connect:        0    0   0.1      0       0
-Processing:     2   16   3.6     16      22
-Waiting:        2   16   3.6     16      22
-Total:          3   16   3.6     16      22
+Connect:        0    0   0.1      0       4
+Processing:     3   13  34.1     10     513
+Waiting:        3   13  34.1     10     513
+Total:          3   13  34.1     10     513
 
 Percentage of the requests served within a certain time (ms)
-  50%     16
-  66%     18
-  75%     19
-  80%     19
-  90%     20
-  95%     21
-  98%     22
-  99%     22
- 100%     22 (longest request)
-This is ApacheBench, Version 2.3 <$Revision: 1807734 $>
-Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
-Licensed to The Apache Software Foundation, http://www.apache.org/
+  50%     10
+  66%     11
+  75%     11
+  80%     12
+  90%     13
+  95%     15
+  98%     18
+  99%     20
+ 100%    513 (longest request)
 ```
 
 ### ORM Benchmarking

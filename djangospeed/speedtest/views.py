@@ -177,11 +177,17 @@ class Create(APIView):
         return Response({"created": True})
 
 
-class Update(APIView):
+class Save(APIView):
     def put(self, request, format=None):
         user = User.objects.first()
         user.last_name=request.data['last_name']
         user.save()
+        return Response({"updated": True})
+
+
+class Update(APIView):
+    def put(self, request, format=None):
+        user = User.objects.filter(id=1).update(last_name=request.data['last_name'])
         return Response({"updated": True})
 
 
@@ -192,4 +198,5 @@ count_list_view = CountList.as_view()
 paginated_list_view = PaginatedList.as_view()
 aggregation_list_view = Aggregation.as_view()
 create_view = Create.as_view()
+save_view = Save.as_view()
 update_view = Update.as_view()

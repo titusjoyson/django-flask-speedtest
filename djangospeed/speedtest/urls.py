@@ -7,6 +7,7 @@ from .views import (
     select_list_view,
     create_view,
     update_view,
+    save_view,
     algo_view
 )
 
@@ -19,5 +20,6 @@ urlpatterns = [
     path('count/', count_list_view),
     path('create/', create_view),
     path('update/', update_view),
+    path('save/', save_view),
     path('algo/', algo_view),
 ]

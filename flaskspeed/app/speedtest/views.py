@@ -175,10 +175,16 @@ class Create(Resource):
         return {"created": True}
 
 
-class Update(Resource):
+class Save(Resource):
     def put(self):
         user = AuthUser.query.filter_by().first()
         user.last_name = request.json['last_name'] 
+        db.session.commit()
+        return { "saved": True }
+
+class Update(Resource):
+    def put(self):
+        user = AuthUser.query.filter_by(id=self.user_id).update(dict(last_name=request.json['last_name']))
         db.session.commit()
         return { "updated": True }
 
