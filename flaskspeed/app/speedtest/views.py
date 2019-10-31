@@ -184,6 +184,8 @@ class Update(Resource):
 
 
 class OrmSpeedTest(Command):
+    user_id = 1
+
     def get_100_rec(self):
         customers = SpeedtestCustomer.query.filter().limit(100)
     
@@ -199,7 +201,7 @@ class OrmSpeedTest(Command):
 
 
     def aggregation(self):
-        amount = db.session.query(func.avg(SpeedtestCustomer.amount))
+        amount = SpeedtestCustomer.query.with_entities(func.avg(SpeedtestCustomer.amount))[0]
 
     def crate_rec(self):
         user = AuthUser(
@@ -210,17 +212,26 @@ class OrmSpeedTest(Command):
         db.session.commit()
 
 
-    def update_rec(self):
-        user = AuthUser.query.filter_by().first()
-        user.last_name = "speed_test_flask"
-        db.session.commit()    
+    def save_rec(self):
+        user = AuthUser.query.first()
+        user.last_name = "speed_test_flask_7"
+        db.session.merge(user)
+        db.session.commit()
 
+    
+    def update_rec(self):
+        user = AuthUser.query.filter_by(id=self.user_id).update(dict(last_name="speed_test_flask_5"))
+        db.session.commit()
+        
 
     def run(self):
-        rotation = 100
+        user = AuthUser.query.first()
+        rotation = 1000
+        self.user_id = user.id
         print ("select:", timeit.Timer(self.get_100_rec).timeit(rotation))
         print ("count:", timeit.Timer(self.count_rec).timeit(rotation))
         print ("paginate_100_rec:", timeit.Timer(self.paginate_100_rec).timeit(rotation))
         print ("aggregation:", timeit.Timer(self.aggregation).timeit(rotation))
         print ("crate_rec:", timeit.Timer(self.crate_rec).timeit(rotation))
+        print ("save_rec:", timeit.Timer(self.save_rec).timeit(rotation))
         print ("update_rec:", timeit.Timer(self.update_rec).timeit(rotation))

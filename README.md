@@ -93,14 +93,15 @@ Licensed to The Apache Software Foundation, http://www.apache.org/
 
 Time taken to complete 1000 queries:
 
-|   Action   | Django         | Flask sqlalchemy |
-|:----------:|----------------|------------------|
-| Select     | 0.005555028998 | 0.020545132      |
-| Count      | 3.12668605     | 3.417979217      |
-| pagination | 3.118750306    | 3.82162432       |
-| aggregate  | 4.778394117    | 0.014073401      |
-| create     | 8.733365253    | 3.1216882        |
-| update     | 3.741050111    | 0.250841299      | 
+|  Action    | Django ORM  | Flask-SQLAlchemy  |
+|------------|-------------|-------------------|
+| Select     | 0.032263662 |       0.012180415 |
+| Count      | 1.403982088 |        2.63598253 |
+| pagination | 4.687958269 |        3.82162432 |
+| aggregate  | 2.005817666 |       2.569968947 |
+| create     | 3.228642431 |       4.362719425 |
+| save       | 4.824882885 |       1.669172032 |
+| update     | 3.277724468 |        5.25546317 |
 
 ## Reference
 
