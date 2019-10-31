@@ -11,6 +11,7 @@ import timeit
 
 class Command(BaseCommand):
     help = 'orm speed test'
+    user_id = 1
 
     def get_100_rec(self):
         customers = Customer.objects.filter()[:100]
@@ -25,7 +26,7 @@ class Command(BaseCommand):
         contacts = paginator.get_page(page)
 
     def aggregation(self):
-        amount = Customer.objects.all().aggregate(Avg('amount'))
+        amount = Customer.objects.aggregate(Avg('amount'))
 
     def crate_rec(self):
         User.objects.create(
@@ -33,17 +34,24 @@ class Command(BaseCommand):
             first_name="speed_test_django"
         )
 
-    def update_rec(self):
+    def save_rec(self):
         user_name = "speed_test_django"
         user = User.objects.first()
         user.last_name=user_name
         user.save()
 
+    def update_rec(self):
+        user_name = "speed_test_django"
+        user = User.objects.filter(id=self.user_id).update(last_name=user_name)
+
     def handle(self, *args, **options):
-        rotation = 100
+        rotation = 1000
+        user = User.objects.first()
+        self.user_id = user.id
         print ("select:", timeit.Timer(self.get_100_rec).timeit(rotation))
         print ("count:", timeit.Timer(self.count_rec).timeit(rotation))
         print ("paginate_100_rec:", timeit.Timer(self.paginate_100_rec).timeit(rotation))
         print ("aggregation:", timeit.Timer(self.aggregation).timeit(rotation))
         print ("crate_rec:", timeit.Timer(self.crate_rec).timeit(rotation))
+        print ("save_rec:", timeit.Timer(self.save_rec).timeit(rotation))
         print ("update_rec:", timeit.Timer(self.update_rec).timeit(rotation))
