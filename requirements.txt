@@ -25,7 +25,7 @@ django-postgrespool==0.3.1
 djangorestframework==3.10.3
 Faker==0.9.1
 Flask==1.1.1
-Flask-AppBuilder==2.1.13
+Flask-AppBuilder==3.3.0
 Flask-Babel==0.12.2
 Flask-JWT-Extended==3.23.0
 Flask-Login==0.4.1
