@@ -52,7 +52,7 @@ itsdangerous==1.1.0
 jedi==0.15.1
 Jinja2==2.10.1
 jsonschema==3.0.2
-Mako==1.1.0
+Mako==1.2.2
 MarkupSafe==1.1.1
 marshmallow==2.19.5
 marshmallow-enum==1.5.1
